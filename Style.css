@@ -1,0 +1,264 @@
+@font-face
+{
+    font-family: Outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+
+}
+@font-face
+{
+    font-family: 'YoungSerif';
+    src:url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1
+{
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    font-size: 2em;
+    font-family:YoungSerif;
+    margin:  3% 0%;
+}
+#mh1
+{
+    font-family:YoungSerif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+    font-size: 2.5em;
+}
+span
+{
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0%;
+    color:  hsl(30, 10%, 34%);
+    background-color:hsl(30, 54%, 90%);
+    font-family:Outfit;
+}
+.card
+{
+    min-height: 80vh;
+    width: 40vw;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3%;
+    border-radius: 1em;
+}
+
+.image img
+{
+    width: 100%;
+    height: 30%;
+    border-radius:1em;
+}
+
+.method
+{
+    color:  hsl(30, 10%, 34%);
+    width: 100%;
+    margin-top: 3%;
+}
+
+.method .p1
+{
+    margin: 3% 0%;
+    line-height: 1.5em
+}
+
+.ptime
+{
+    padding: 4%;
+    background-color: hsl(330, 100%, 98%);
+    line-height: 2em;
+    margin-bottom: 3%;
+    border-radius: 1em;
+}
+.ptime h2
+{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.ptime li
+{
+    margin-left: 1.5%;
+    /* padding-left: 1em; */
+}
+
+.list 
+{
+    margin-bottom: 3%;
+}
+.list li
+{
+    margin-left: 1%;
+    line-height: 2em;
+    list-style-type: square;
+}
+
+.list h2
+{
+    margin-bottom: 3%;
+}
+
+.instruction 
+{
+    margin: 3% 0%;
+}
+.instruction h1
+{
+    margin: 3% 0%;
+}
+.instruction li
+{
+    line-height: 1.4em;    
+    margin-left: 3.4%;
+    margin-top: 2%;
+    padding-left: 0.8em;
+    list-style-position: outside;
+    list-style-type:decimal;
+}
+
+/* .instruction ul
+{
+    list-style-position:outside;
+} */
+
+.nutrition
+{
+    margin: 3% 0%;
+}
+.nutrition p
+{
+    margin-top: 3%;
+}
+
+table
+{
+    margin-top: 3%;
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 2em;
+    text-indent: 2em;
+    color:hsl(30, 10%, 34%);
+}
+
+td
+{
+    padding: 1%;
+}
+
+.data
+{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    /* font-size: 1.2rem; */
+}
+tr
+{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr:last-child
+{
+    border-bottom:none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100vw;
+        min-height:100vh ;
+        padding: 5%;
+        box-sizing: border-box;
+    }
+
+    h1, #mh1 {
+        font-size: 1.5em;
+    }
+
+    .ptime h2, .list h2, .instruction h1 {
+        font-size: 1.1em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    td {
+        padding: 2%;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 100vw;
+        /* padding: 5%; */
+        border-radius:0em;
+    }
+    .image img
+    {
+        border-radius: 0em;
+    }
+    h1, #mh1 {
+        font-size: 1.2em;
+    }
+
+    .image img {
+        border-radius: 0.5em;
+    }
+
+    .ptime h2 {
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    td {
+        padding: 1.5%;
+    }
+    body
+    {
+        padding: 0%;
+    }
+}
+/* 
+
+@media screen and (max-width:400px) {
+    .card
+    {
+        width: 100vw;
+        min-height: 100vh;
+        /* padding: 0% 17%; */
+        /* overflow: hidden; */
+        /* font-size: 7px;
+        border-radius: none;
+    }
+    
+    .image img
+    {
+        width: 100%;
+        border-radius: 0em;
+
+    }
+    
+} */ 
